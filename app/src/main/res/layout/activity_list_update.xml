@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="#98D8EF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".list_update">
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#1D1616">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/backtomain2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/efarrow"
+                android:paddingTop="5dp"
+                android:layout_marginStart="-5dp"
+                android:src="@drawable/baseline_arrow_back_40"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="27sp"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Back"/>
+        </LinearLayout>
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="670dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity=""
+            android:layout_marginTop="70dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:text="Edit data if you doubt"
+            android:textColor="#1D1616"
+            android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/edtact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edtcl"
+                android:drawableStart="@drawable/baseline_directions_run_35"
+                android:drawablePadding="15dp"
+                android:elevation="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="sans-serif"
+                android:hint="Input your activity"
+                android:padding="15dp"
+                android:layout_marginTop="40dp"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtdesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edtcl"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="20dp"
+                android:drawableStart="@drawable/baseline_edit_35"
+                android:drawablePadding="15dp"
+                android:elevation="10dp"
+                android:fontFamily="sans-serif"
+                android:hint="Input description"
+                android:padding="15dp"
+                android:textSize="15sp" />
+        <EditText
+            android:id="@+id/edtdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edtcl"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/baseline_date_ranges_35"
+            android:drawablePadding="15dp"
+            android:elevation="10dp"
+            android:fontFamily="sans-serif"
+            android:hint="Input date"
+            android:padding="15dp"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edttime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edtcl"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/baseline_lock_clock_35"
+            android:drawablePadding="15dp"
+            android:elevation="10dp"
+            android:fontFamily="sans-serif"
+            android:hint="Input time"
+            android:padding="15dp"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/senddataaedt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/cbtn"
+            android:fontFamily="@font/montserrat"
+            android:foreground="?android:selectableItemBackground"
+            android:text="Edit"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
